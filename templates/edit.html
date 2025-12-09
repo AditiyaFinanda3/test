@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Mahasiswa</title>
+</head>
+<body>
+    <h1>Edit Mahasiswa</h1>
+    <form method="post">
+        Nama: <input type="text" name="nama" value="{{ mahasiswa.nama }}"><br>
+        NIM: <input type="text" name="nim" value="{{ mahasiswa.nim }}"><br>
+        Jurusan: <input type="text" name="jurusan" value="{{ mahasiswa.jurusan }}"><br>
+        <input type="submit" value="Update">
+    </form>
+    <a href="{{ url_for('index') }}">Kembali</a>
+</body>
+</html>
